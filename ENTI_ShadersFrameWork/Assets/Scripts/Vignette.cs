@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -26,6 +27,7 @@ public sealed class Vignette : PostProcessEffectSettings
     [Range(0f, 1f), Tooltip("Effect Intensity.")]
     public FloatParameter _outerRadius = new FloatParameter { value = 0.0f };
 
+
 }
 
 public class VignetteRenderer : PostProcessEffectRenderer<Vignette>//<T> is the setting type
@@ -45,4 +47,3 @@ public class VignetteRenderer : PostProcessEffectRenderer<Vignette>//<T> is the 
         context.command.BlitFullscreenTriangle(context.source, context.destination, sheet, 0);
     }
 }
-

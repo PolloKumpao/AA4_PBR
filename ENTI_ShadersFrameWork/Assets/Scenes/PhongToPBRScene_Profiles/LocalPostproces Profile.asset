@@ -78,13 +78,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 950e9df8a8985ec4f87cb70d6b3c2f2b, type: 3}
   m_Name: Pixelate
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
   NPixels:
     overrideState: 1
-    value: 108
+    value: 152
 --- !u!114 &-3908692981650687287
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15b5bca7918cf7945a253ad78703b697, type: 3}
   m_Name: Vignette
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
@@ -106,13 +106,13 @@ MonoBehaviour:
     value: 1
   color:
     overrideState: 1
-    value: {r: 0.9622642, g: 0.013616921, b: 0.013616921, a: 1}
+    value: {r: 0.16037738, g: 0.12330902, b: 0.12330902, a: 1}
   _innerRadius:
     overrideState: 1
-    value: 0.27
+    value: 0.347
   _outerRadius:
     overrideState: 1
-    value: 1
+    value: 0.881
 --- !u!114 &-468697084914247294
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -160,6 +160,32 @@ MonoBehaviour:
   settings:
   - {fileID: -3908692981650687287}
   - {fileID: -5141255438872985328}
+  - {fileID: 736640755365983826}
+--- !u!114 &736640755365983826
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fe1a27684ce177459bc92e23eef355f, type: 3}
+  m_Name: Blur
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  blend:
+    overrideState: 1
+    value: 0
+  sample:
+    overrideState: 1
+    value: 0
+  StandarDeviation:
+    overrideState: 1
+    value: 0.0397
 --- !u!114 &1949842251818021407
 MonoBehaviour:
   m_ObjectHideFlags: 3
