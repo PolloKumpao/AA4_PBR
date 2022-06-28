@@ -78,13 +78,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 950e9df8a8985ec4f87cb70d6b3c2f2b, type: 3}
   m_Name: Pixelate
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
   NPixels:
     overrideState: 1
-    value: 152
+    value: 106
 --- !u!114 &-3908692981650687287
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -173,14 +173,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fe1a27684ce177459bc92e23eef355f, type: 3}
   m_Name: Blur
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
   blend:
-    overrideState: 1
-    value: 0
-  sample:
     overrideState: 1
     value: 0
   StandarDeviation:

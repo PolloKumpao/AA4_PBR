@@ -18,9 +18,6 @@ public sealed class Blur : PostProcessEffectSettings
     [Range(0f, 0.1f), Tooltip("Effect Intensity.")]
     public FloatParameter blend = new FloatParameter { value = 0.0f };
 
-    [Range(0f, 5f) , Tooltip("Sample amount")]
-    public IntParameter sample = new IntParameter { value = 0 };
-
     [Range(0f, 0.1f), Tooltip("StandarDeviation")]
     public FloatParameter StandarDeviation = new FloatParameter { value = 0.02f };
 }
@@ -34,7 +31,6 @@ public class BlurRenderer : PostProcessEffectRenderer<Blur>//<T> is the setting 
 
         //Set the uniform value for our shader
         sheet.properties.SetFloat("_BlurSize", settings.blend);
-        sheet.properties.SetInt("_sample", settings.sample);
         sheet.properties.SetFloat("_SD", settings.StandarDeviation);
 
         //We render the scene as a full screen triangle applying the specified shader

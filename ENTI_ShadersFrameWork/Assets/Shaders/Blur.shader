@@ -11,7 +11,6 @@
 
 		sampler2D _MainTex;
 		float _BlurSize;
-		int _sample;
 		float _SD;
 		float sum = SAMPLES;
 		float4 col;
